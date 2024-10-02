@@ -16,13 +16,13 @@ describe("Factorial tests", function () {
   it("should return 'Hello, est test' if original='Hello, ceci est un test' et wordsToRemove=[' ceci', ' un']", function () {
     const original = "Hello, ceci est un test";
     const wordsToRemove = [" ceci", " un"];
-    expect(removeWords(original, wordsToRemove), "Hello, est test");
+    expect(removeWords(original, wordsToRemove)).to.eq("Hello, est test");
   });
 
   it("should return 'Hello Java' if original='Hello Java' et wordsToRemove=[' java']", function () {
     const original = "Hello Java";
     const wordsToRemove = [" java"];
-    expect(removeWords(original, wordsToRemove), "Hello Java");
+    expect(removeWords(original, wordsToRemove)).to.eq("Hello Java");
   });
 
   it("should return 'Itaosy Analamahitsy' if places=['Analamahitsy', 'Analamahitsy', 'Itaosy', 'Behoririka', 'Itaosy', 'Itaosy']", function () {
@@ -34,7 +34,7 @@ describe("Factorial tests", function () {
       "Itaosy",
       "Itaosy",
     ];
-    expect(getMostPopularPlaces(places), "Itaosy Analamahitsy");
+    expect(getMostPopularPlaces(places)).to.eq("Itaosy Analamahitsy");
   });
 
   it("sould not have duplicated first and second popular place and return -1", function(){
@@ -47,6 +47,6 @@ describe("Factorial tests", function () {
         "Itaosy",
         "Itaosy",
       ];
-      
+    expect(getMostPopularPlaces(places)).to.eq(-1);
   })
 });

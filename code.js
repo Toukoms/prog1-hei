@@ -8,10 +8,11 @@ export function factorial(n) {
  * @param {Array<string>} wordsToRemove
  */
 export function removeWords(original, wordsToRemove) {
+  let result = original
   wordsToRemove.forEach((value) => {
-    original.replace(value, "");
+    result = result.replace(value, "");
   });
-  return original;
+  return result;
 }
 
 /**
