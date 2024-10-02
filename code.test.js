@@ -4,7 +4,7 @@ import { factorial, getMostPopularPlaces, removeWords } from "./code.js";
 
 /** Run npm i mocha chai to install mocha and chai */
 /** Run npx mocha your.test.file to run */
-describe("Factorial tests", function () {
+describe("Prog 1 tests", function () {
   it("should return 125 if n = 5", function () {
     expect(factorial(5)).to.eq(120);
   });
